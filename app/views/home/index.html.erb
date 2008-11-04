@@ -1,10 +1,15 @@
+
 <form action="/" method="post">
 	<div class="input-div">
 		Collaboration Topic:<br>
 		<input type="text" name="topic" class="text">
 	</div>
 	<div class="input-div">
-		Time:<br>
+		Meeting Coordinator (email):<br>
+		<input type="text" name="coordinator" class="text">
+	</div>
+	<div class="input-div">
+		Time (example: "3 hours from now"):<br>
 		<input type="text" name="time" class="text">
 	</div>
 	<div class="input-div">
@@ -15,5 +20,6 @@
 		Message:<br>
 		<textarea name="message"></textarea>
 	</div>
-	<input type="image" src="images/submit.gif" alt="Submit" style="margin-left:150px; margin-top:80px;">
+	<%= token_tag %>
+	<input type="image" src="images/submit.gif" alt="Submit" style="margin-left:150px; margin-top:40px;">
 </form>
