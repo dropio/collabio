@@ -1,17 +1,19 @@
-<div class="input-div">
-	Collaboration Title:<br>
-	<input type="text">
-</div>
-<div class="input-div">
-	Time:<br>
-	<input type="text">
-</div>
-<div class="input-div">
-	Participant(s):<br>
-	<input type="text">
-</div>
-<div>
-	Message:<br>
-	<textarea></textarea>
-</div>
-<img src="images/submit.gif" style="margin-left:150px; margin-top:80px;">
+<form action="/" method="post">
+	<div class="input-div">
+		Collaboration Topic:<br>
+		<input type="text" name="topic" class="text">
+	</div>
+	<div class="input-div">
+		Time:<br>
+		<input type="text" name="time" class="text">
+	</div>
+	<div class="input-div">
+		Participant(s):<br>
+		<input type="text" name="participants" class="text">
+	</div>
+	<div>
+		Message:<br>
+		<textarea name="message"></textarea>
+	</div>
+	<input type="image" src="images/submit.gif" alt="Submit" style="margin-left:150px; margin-top:80px;">
+</form>

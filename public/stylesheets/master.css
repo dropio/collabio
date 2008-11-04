@@ -1,0 +1,39 @@
+body {
+	background:#e5e5e5;
+	font-family:georgia; 
+	color:#333; 
+	font-size:12px;
+}
+
+input[type=text] {
+	width:300px;
+	background:url(/images/text-bg.gif) repeat-x;
+	border:solid 1px #ddd;
+	height:25px;
+	font-size:14px;
+	font-family:georgia;
+	padding:3px;
+}
+
+textarea {
+	width:400px;
+	height:150px;
+	background:url(/images/text-bg.gif) repeat-x;
+	border:solid 1px #ddd;
+	font-size:14px;
+	font-family:georgia;
+	padding:3px;
+}
+
+#content {
+	width:707px;
+	height:660px;
+	background:url(/images/bg.jpg);
+	text-align:left;
+	padding-top:140px;
+	padding-left:90px;
+}
+
+.input-div {
+	margin-bottom:30px;
+}
