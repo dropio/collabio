@@ -14,5 +14,5 @@ end
 
 api_config = YAML.load(File.open(File.join(RAILS_ROOT,"config","api.yml")))
 
-#include Dropio
-#Dropio.api_key = api_config["dropio"]["api_key"]
+include Dropio
+Dropio.api_key = api_config["dropio"]["api_key"]
