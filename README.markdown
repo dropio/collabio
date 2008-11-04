@@ -1,7 +1,7 @@
 Collab.io
 ============================
 
-This simple application searches for a particular query in the Twitter stream, characterizes it as positive or negative and archives the twit into a Drop as a note. 
+This sample application taps into the lesser used features of Drop.io to create a collaboration tool for a one time, topical meeting.
 
 This application requires to you sign up for an API key. To get an API key, go to [http://api.drop.io/](http://api.drop.io/).
 
