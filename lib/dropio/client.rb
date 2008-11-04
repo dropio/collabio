@@ -277,14 +277,14 @@ class Dropio::Client
   
   # Creates a path for sending an +Asset+
   def send_to_path(drop, asset)
-    return asset_path(asset) + "/send_to"
+    return asset_path(drop, asset) + "/send_to"
   end
     
   # Starts and completes the given request. Returns or yields the response body.
   def complete_request(request, host = URI.parse(Dropio.api_url).host)
     http = Net::HTTP.new(host)
     # Set to debug http output.
-    http.set_debug_output $stderr
+    # http.set_debug_output $stderr
     response = http.start { |http| http.request(request) }
 
     case response
