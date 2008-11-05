@@ -37,3 +37,19 @@ textarea {
 .input-div {
 	margin-bottom:30px;
 }
+
+#diggit {
+	float:right; 
+	margin-right:100px;
+}
+
+#poweredby {
+	float:left; 
+	width:130px;
+	height:40px;
+	cursor:pointer;
+}
+
+.exp {
+	color:#999;
+}
