@@ -1,17 +1,17 @@
 You're invited to collaborate on <%= @topic %> at <%= @time.strftime("%m/%d/%Y at %I:%M%p") %>...
-</br>
-</br>
+<br/>
+<br/>
 Topic: <%= @topic %>
-</br>
+<br/>
 When: <%= @time.strftime("%m/%d/%Y at %I:%M%p") %>
-</br>
+<br/>
 Where: <%= link_to "http://drop.io/#{@drop.name}", "http://drop.io/#{@drop.name}" %>
-</br>
+<br/>
 Conference Line: <%= @drop.conference %>
-</br>
-</br>
+<br/>
+<br/>
 Use the Drop to collaborate, add files, notes, comments, links, documents, etc.
-</br>
+<br/><br/>
 <%= @message %>
-</br>
+<br/><br/>
 You are receiving this email because <%= @coordinator %> sent you this message. If you got this message in error, we're sorry and won't send you another email.
