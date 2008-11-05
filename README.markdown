@@ -5,7 +5,7 @@ This sample application taps into the lesser used features of Drop.io to create 
 
 This application requires to you sign up for an API key. To get an API key, go to [http://api.drop.io/](http://api.drop.io/).
 
-Create a RAILS_ROOT/config/api.yml with the contents below, replacing "your_api_key" with your API key you were issued.
+Create a RAILS\_ROOT/config/api.yml with the contents below, replacing "your\_api\_key" with your API key you were issued.
 
 	dropio:
     	api_key: your_api_key
