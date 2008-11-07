@@ -20,7 +20,7 @@ class HomeController < ApplicationController
     filter = Regexp.new('^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$')
     emails.each {|email| (filter.match(email) ? @recipients : bad_emails) << email }
 
-    InviteMailer.deliver_message(@drop, params[:coordinator], params[:topic], @time_guess, @recipients, params[:message])
+    InviteMailer.deliver_message(@drop, params[:coordinator], params[:topic], params[:time], @recipients, params[:message])
     
     redirect_to @drop.generate_url
   end
@@ -31,9 +31,7 @@ class HomeController < ApplicationController
     return false if params[:topic].blank?
     return false if params[:coordinator].blank?
     return false if params[:participants].blank?
-    
-    @time_guess = Chronic.parse(params[:time], { :context => :future })
-    return false if params[:time].blank? || @time_guess.nil?
+    return false if params[:time].blank?
     
     return true
   end
