@@ -4,7 +4,7 @@ class InviteMailer < ActionMailer::Base
     emails << coordinator
     recipients emails
     from "\"Collab.io\" <collabio@drop.io>"
-    subject "Let's collaborate about #{topic} on #{time.strftime("%m/%d/%Y at %I:%M%p")}"
+    subject "Let's collaborate about #{topic} on #{time}"
     body :drop => drop, :coordinator => coordinator, :topic => topic, :time => time, :message => message
     content_type "text/html"
   end
